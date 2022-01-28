@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Гадалка</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 <h1>Скорее к Гадалке</h1>
@@ -17,20 +18,20 @@
 
 <h3>Приступим!</h3>
 
-<form action=/neponyatno.php method="post">
-    <label for="your name">Введите ваше имя:  </label>
+<form action="http://localhost:63342/Lekciya-2/index2.html?_ijt=3bg4jb43qc5ci4v7lu09e4c4bd&_ij_reload=RELOAD_ON_SAVE" method="post">
+    <label for="your name">Введите ваше имя: </label>
     <input type="text" id="your name" name="your name"/>
     <br/>
     <br/>
-    <label>Укажите ваш пол:  </label>
-   <p><input type="radio" value="Мужской" name="genus"> Мужской</p>
+    <label>Укажите ваш пол: </label>
+    <p><input type="radio" value="Мужской" name="genus"> Мужской</p>
     <p><input type="radio" value="Женский" name="genus"> Женский</p>
-    <p> <input type="radio" value="Я ещё не определился" name="genus"> Я ещё не определился</p>
+    <p><input type="radio" value="Я ещё не определился" name="genus"> Я ещё не определился</p>
     <br/>
-    <label for="wish">Введите через запятую 3 своих желания:  </label>
+    <label for="wish">Введите 3 своих желания. Каждое желание с новой строки: </label><br/>
     <textarea maxlength="255" rows="7" id="wish" name="wish"></textarea>
     <br/>
-    <p> <label>Какими качествами должен обладать человек, чтобы быть вам интересным:  </label></p>
+    <p><label>Какими качествами должен обладать человек, чтобы быть вам интересным: </label></p>
     <input type="checkbox" id="quality1" name="quality" value="mozgi">
     <label for="quality1">Ум</label>
     <br/>
@@ -55,7 +56,7 @@
     <input type="checkbox" id="quality8" name="quality" value="Generosity">
     <label for="quality8">Щедрость</label>
     <br/>
-    <p> <label>Выберите любимое животное:  </label></p>
+    <p><label>Выберите любимое животное: </label></p>
     <p><select id="Animal">
         <option value="Cat">Кошка</option>
         <option value="Dog">Собака</option>
@@ -66,12 +67,19 @@
         <option value="Cockroaches">Тараканы</option>
     </select></p>
     <br/>
-
-
-
+    <p><label>Выберите качества для работы мечты: </label></p>
+    <p><select id="Work" multiple size="5">
+        <option value="Soul">Удовлетворяет душевным потребностям</option>
+        <option value="Money">Высокая зарплата</option>
+        <option value="Home">Близко к дому</option>
+        <option value="Myself">Работа на себя</option>
+        <option value="Boss">Понимающий начальник</option>
+        <option value="Work_home">Удалённая работа</option>
+        <option value="Office">Работа в офисе</option>
+    </select></p>
+    <button type="submit">Погадать!</button>
 </form>
 <br/>
-    <button type="submit">Погадать!</button>
 
 </body>
 </html>
