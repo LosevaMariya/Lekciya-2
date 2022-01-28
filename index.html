@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Гадалка</title>
+</head>
+<body>
+<h1>Скорее к Гадалке</h1>
+<hr/>
+<p>Заполнив поля и ответив на вопросы формы, Вы узнаете: </p>
+
+<ul>
+    <li>Что ждёт вас в будущем</li>
+    <li>Какой у вас характер</li>
+    <li>Чего нужно опасаться</li>
+</ul>
+
+<h3>Приступим!</h3>
+
+<form action=/neponyatno.php method="post">
+    <label for="your name">Введите ваше имя:  </label>
+    <input type="text" id="your name" name="your name"/>
+    <br/>
+    <br/>
+    <label>Укажите ваш пол:  </label>
+   <p><input type="radio" value="Мужской" name="genus"> Мужской</p>
+    <p><input type="radio" value="Женский" name="genus"> Женский</p>
+    <p> <input type="radio" value="Я ещё не определился" name="genus"> Я ещё не определился</p>
+    <br/>
+    <label for="wish">Введите через запятую 3 своих желания:  </label>
+    <textarea maxlength="255" rows="7" id="wish" name="wish"></textarea>
+    <br/>
+    <p> <label>Какими качествами должен обладать человек, чтобы быть вам интересным:  </label></p>
+    <input type="checkbox" id="quality1" name="quality" value="mozgi">
+    <label for="quality1">Ум</label>
+    <br/>
+    <input type="checkbox" id="quality2" name="quality" value="beauty">
+    <label for="quality2">Красота</label>
+    <br/>
+    <input type="checkbox" id="quality3" name="quality" value="money">
+    <label for="quality3">Финансовая обеспеченность</label>
+    <br/>
+    <input type="checkbox" id="quality4" name="quality" value="kindness">
+    <label for="quality4">Доброта</label>
+    <br/>
+    <input type="checkbox" id="quality5" name="quality" value="Understanding">
+    <label for="quality5">Понимание</label>
+    <br/>
+    <input type="checkbox" id="quality6" name="quality" value="Mother">
+    <label for="quality6">Любовь к маме</label>
+    <br/>
+    <input type="checkbox" id="quality7" name="quality" value="Responsiveness">
+    <label for="quality7">Отзывчивость</label>
+    <br/>
+    <input type="checkbox" id="quality8" name="quality" value="Generosity">
+    <label for="quality8">Щедрость</label>
+    <br/>
+    <p> <label>Выберите любимое животное:  </label></p>
+    <p><select id="Animal">
+        <option value="Cat">Кошка</option>
+        <option value="Dog">Собака</option>
+        <option value="Parrot">Попугай</option>
+        <option value="Snake">Змея</option>
+        <option value="Crocodile">Крокодил</option>
+        <option value="Hamster">Хомячок</option>
+        <option value="Cockroaches">Тараканы</option>
+    </select></p>
+    <br/>
+
+
+
+</form>
+<br/>
+    <button type="submit">Погадать!</button>
+
+</body>
+</html>
+
