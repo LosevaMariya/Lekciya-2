@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Гадалка</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 <h1>Скорее к Гадалке</h1>
@@ -18,17 +18,20 @@
 
 <h3>Приступим!</h3>
 
-<form action="http://localhost:63342/Lekciya-2/index2.html?_ijt=3bg4jb43qc5ci4v7lu09e4c4bd&_ij_reload=RELOAD_ON_SAVE" method="post">
-    <label for="your name">Введите ваше имя: </label>
+<form action="http://localhost:63342/Lekciya-2/index2.html?_ijt=3bg4jb43qc5ci4v7lu09e4c4bd&_ij_reload=RELOAD_ON_SAVE"
+      method="post">
+    <p><label for="your name">Введите ваше имя: </label></p>
     <input type="text" id="your name" name="your name"/>
     <br/>
     <br/>
-    <label>Укажите ваш пол: </label>
-    <p><input type="radio" value="Мужской" name="genus"> Мужской</p>
-    <p><input type="radio" value="Женский" name="genus"> Женский</p>
-    <p><input type="radio" value="Я ещё не определился" name="genus"> Я ещё не определился</p>
+    <p><label>Укажите ваш пол: </label><br/></p>
     <br/>
-    <label for="wish">Введите 3 своих желания. Каждое желание с новой строки: </label><br/>
+    <input type="radio" value="Мужской" name="genus"> Мужской<br/>
+    <input type="radio" value="Женский" name="genus"> Женский<br/>
+    <input type="radio" value="Я ещё не определился" name="genus"> Я ещё не определился
+    <br/>
+    <br/>
+    <p><label for="wish">Введите 3 своих желания. Каждое желание с новой строки: </label></p><br/>
     <textarea maxlength="255" rows="7" id="wish" name="wish"></textarea>
     <br/>
     <p><label>Какими качествами должен обладать человек, чтобы быть вам интересным: </label></p>
@@ -66,7 +69,6 @@
         <option value="Hamster">Хомячок</option>
         <option value="Cockroaches">Тараканы</option>
     </select></p>
-    <br/>
     <p><label>Выберите качества для работы мечты: </label></p>
     <p><select id="Work" multiple size="5">
         <option value="Soul">Удовлетворяет душевным потребностям</option>
