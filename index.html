@@ -19,7 +19,7 @@
 
 <h3>Приступим!</h3>
 
-<form action="http://localhost:63342/Lekciya-2/index2.html?_ijt=3bg4jb43qc5ci4v7lu09e4c4bd&_ij_reload=RELOAD_ON_SAVE"
+<form action="address.php"
       method="post">
     <p><label for="your name">Введите ваше имя: </label></p>
     <input type="text" id="your name" name="your name"/>
@@ -27,9 +27,12 @@
     <br/>
     <p><label>Укажите ваш пол: </label><br/></p>
     <br/>
-    <input type="radio" value="Мужской" name="genus"> Мужской<br/>
-    <input type="radio" value="Женский" name="genus"> Женский<br/>
-    <input type="radio" value="Я ещё не определился" name="genus"> Я ещё не определился
+    <input type="radio" id="gender1" name="gender" value="Мужской">
+    <label for="gender1">Мужской</label> <br/>
+    <input type="radio" id="gender2" name="gender" value="Женский">
+    <label for="gender2">Женский</label> <br/>
+    <input type="radio" id="gender3" name="gender" value="Я ещё не определился">
+    <label for="gender3">Я ещё не определился</label>
     <br/>
     <br/>
     <p><label for="wish">Введите 3 своих желания. Каждое желание с новой строки: </label></p><br/>
@@ -83,7 +86,8 @@
     <button type="submit">Погадать!</button>
 </form>
 <br/>
-
+<a href="http://localhost:63342/Lekciya-2/index2.html?_ijt=jm46bdqj0betg06dlre3rg7nsh&_ij_reload=RELOAD_ON_SAVE">Для возврата на предыдущую страницу жми!</a>
+<br/>
 </body>
 </html>
 
